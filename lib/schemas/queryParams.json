@@ -1,0 +1,30 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "title": "Configuration schema",
+  "type": "object",
+  "additionalProperties": false,
+  "properties": {
+    "radius": {
+      "type": "string",
+      "minLength": 1,
+      "required": true
+    },
+    "coords": {
+      "type": "string",
+      "minLength": 1,
+      "required": true
+    },
+    "type": {
+      "type": "string",
+      "minLength": 1,
+      "required": false
+    },
+    "geometry": {
+      "type": "string",
+      "enum": [
+        "Circle"
+      ],
+      "required": true
+    }
+  }
+}

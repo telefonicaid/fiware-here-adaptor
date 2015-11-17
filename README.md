@@ -1,10 +1,10 @@
 # Fiware HERE Adaptor
 
-Join the information provided by HERE and City Broker for the car navigator.
+Adaptor component for the FIWARE-NGSI-HERE integration for Smarter car navigation through cities.
 
 # How to install and run
 
-Following instructions are for development setups:
+The following instructions are for development setups:
 
 Prerequisites:
 
@@ -65,7 +65,62 @@ CONFIG_DIR environment variable is optional. The default configuration has the f
   }
 }
 ```
-The internal config is in 'lib/config/config.json' but you can use the environment variable CONFIG_DIR to set a folder that merges the configs obtained from json files.
+The internal config is stored in '{installation_path}/lib/config/config.json' but you can use the environment variable CONFIG_DIR to set a folder that merges the configs obtained from json files against the internal config file.
+
+Example taking into account the internal config file above included:
+
+CONFIG_DIR=/opt/fiware-here-adaptor
+
+File **/opt/fiware-here-adaptor/config.json**:
+```json
+{
+  "serverPort": 8080,
+  "here": {
+    "geocodingUrl": "http://geocoder.cit.api.here.com",
+    "reverseGeocodingUrl": "http://reverse.geocoder.cit.api.here.com",
+    // You can obtain your API keys in HERE service.
+    "appId": "534g23df325df23gf4",
+    "appCode": "63gdsgv23d78ads5bgv"
+  }
+}
+```
+
+The server will merge **/opt/fiware-here-adaptor/config.json** into **{installation_path}/lib/config/config.json** in order to get the following final configuration:
+
+```json
+{
+  // Port where fiware-here-adaptor is available
+  "serverPort": 8080,
+
+  "logLevel": "INFO",
+
+  // Log format: "json", "pipe", or "dev"
+  "logFormat": "json",
+
+  // If true, disable unauthorized SSL (NODE_TLS_REJECT_UNAUTHORIZED = 0)
+  "gentleSsl": true,
+
+  //Global city broker directory configuration
+  "contextBroker": {
+    "cityContextBrokerDirectoryName": "CityBrokerFHA",
+    "maxDistanceCityDirectory": 10,
+    "cityBrokerDirectoryConfig": {
+      // Global city broker endpoint
+      "url": "http://{contextBrokerIp}:1026/v1",
+      "userAgent": "fiware-here-adapter"
+    }
+  },
+
+  // HERE configuration to consume the API
+  "here": {
+    "geocodingUrl": "http://geocoder.cit.api.here.com",
+    "reverseGeocodingUrl": "http://reverse.geocoder.cit.api.here.com",
+    // You can obtain your API keys in HERE service.
+    "appId": "534g23df325df23gf4",
+    "appCode": "63gdsgv23d78ads5bgv"
+  }
+}
+```
 
 ## Other commands:
 * Launch unit tests:

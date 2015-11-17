@@ -1,36 +1,51 @@
 'use strict';
 
 var Orion = require('fiware-orion-client');
-
+var _ = require('lodash');
 var ORION_SERVER = 'http://130.206.83.68:1026/v1';
 var OrionClient = new Orion.Client({
   url: ORION_SERVER,
   userAgent: 'fiware-here-adapter'
 });
 
-
-var cities = {
-  madrid: false,
-  oporto: false,
-  guadalajara: false,
-  aveiro: false,
-  amsterdam: false
-};
-
+var cities = [];
 
 if (process.argv.length === 2) {
-  for (var key in cities) {
-    cities[key] = true;
-  }
+  cities = ['madrid', 'oporto', 'guadalajara', 'aveiro', 'amsterdam'];
 } else {
   process.argv.forEach(function (val, index) {
     if (index > 1) {
-      cities[val] = true;
+      cities.push(val);
     }
   });
 }
 
-if (cities.madrid) {
+cities = _.uniq(cities);
+
+cities.forEach(function(city) {
+  switch(city) {
+    case 'madrid':
+      updateContextMadrid();
+      break;
+    case 'oporto':
+      updateContextOporto();
+      break;
+    case 'guadalajara':
+      updateContextGuadalajara();
+      break;
+    case 'aveiro':
+      updateContextAveiro();
+      break;
+    case 'amsterdam':
+      updateContextAmsterdam();
+      break;
+    default:
+      console.log('Unknown City');
+  }
+
+});
+
+function updateContextMadrid() {
   var contextDataMad = {
     type: 'CityBrokerFHA',
     id: 'rtcbmadrid',
@@ -46,7 +61,7 @@ if (cities.madrid) {
 }
 
 //------------------------------------------------------
-if (cities.guadalajara) {
+function updateContextGuadalajara() {
   var contextDataGua = {
     type: 'CityBrokerFHA',
     id: 'rtcbguadalajara',
@@ -62,7 +77,7 @@ if (cities.guadalajara) {
 }
 
 //------------------------------------------------------
-if (cities.amsterdam) {
+function updateContextAmsterdam() {
   var contextDataAms = {
     type: 'CityBrokerFHA',
     id: 'rtcbamsterdam',
@@ -79,7 +94,7 @@ if (cities.amsterdam) {
 
 //------------------------------------------------------
 
-if (cities.oporto) {
+function updateContextOporto() {
   var contextDataOporto = {
     type: 'CityBrokerFHA',
     id: 'rtcboporto',
@@ -123,7 +138,7 @@ if (cities.oporto) {
 
 //------------------------------------------------------
 
-if (cities.aveiro) {
+function updateContextAveiro() {
   var contextDataAveiro = {
     type: 'CityBrokerFHA',
     id: 'rtcbaveiro',

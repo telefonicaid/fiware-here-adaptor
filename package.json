@@ -1,7 +1,7 @@
 {
   "name": "fiware-here-adaptor",
   "version": "1.0.0",
-  "description": "Join the information provided by HERE and City Broker for the car navigator.",
+  "description": "Adaptor component for the FIWARE-NGSI-HERE integration for Smarter car navigation through cities.",
   "main": "index.js",
   "author": "Telefonica I+D",
   "contributors": [

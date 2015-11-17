@@ -1,0 +1,30 @@
+{
+  // Port where fiware-here-adaptor is available
+  "serverPort": 7007,
+
+  "logLevel": "INFO",
+
+  // Log format: "json", "pipe", or "dev"
+  "logFormat": "json",
+
+  // If true, disable unauthorized SSL (NODE_TLS_REJECT_UNAUTHORIZED = 0)
+  "gentleSsl": true,
+
+  //City Broker Directory configuration
+  "contextBroker": {
+    "cityContextBrokerDirectoryName": "CityBrokerFHA",
+    "maxDistanceCityDirectory": 10,
+    "cityBrokerDirectoryConfig": {
+      "url": "http://{contextBrokerIp}:1026/v1",
+      "userAgent": "fiware-here-adapter"
+    }
+  },
+
+  // HERE configuration to consume the API
+  "here": {
+    "geocodingUrl": "http://geocoder.cit.api.here.com",
+    "reverseGeocodingUrl": "http://reverse.geocoder.cit.api.here.com",
+    "appId": "myAppId",
+    "appCode": "myAppCode"
+  }
+}

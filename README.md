@@ -31,7 +31,7 @@ When npm process finishes the dependencies installation, you could run the fiwar
 
 CONFIG_DIR environment variable is optional. The default configuration has the following aspect:
 
-```json
+```js
 {
   // Port where fiware-here-adaptor is available
   "serverPort": 7007,
@@ -72,7 +72,7 @@ Example taking into account the internal config file above included:
 CONFIG_DIR=/opt/fiware-here-adaptor
 
 File **/opt/fiware-here-adaptor/config.json**:
-```json
+```js
 {
   "serverPort": 8080,
   "here": {
@@ -87,7 +87,7 @@ File **/opt/fiware-here-adaptor/config.json**:
 
 The server will merge **/opt/fiware-here-adaptor/config.json** into **{installation_path}/lib/config/config.json** in order to get the following final configuration:
 
-```json
+```js
 {
   // Port where fiware-here-adaptor is available
   "serverPort": 8080,
@@ -200,7 +200,7 @@ var rules = [
 ```
 
 * Origin Object:
-```json
+```js
   {
     "geom_feature": "geom_feature",
     "id": "id",
@@ -210,7 +210,7 @@ var rules = [
 ```
 
 * Result Object:
-```json
+```js
   {
     "location": "geom_feature",
     "closing_time": "23:00",

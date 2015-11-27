@@ -14,7 +14,7 @@ Prerequisites:
 Download the source code from git repository:
 
   ```bash
-  $ git clone git@pdihub.hi.inet:labajo/fiware-here-adaptor.git
+  $ git clone https://github.com/telefonicaid/fiware-here-adaptor.git
   ```
 
 Install dependencies:

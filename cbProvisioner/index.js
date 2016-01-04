@@ -11,7 +11,7 @@ var OrionClient = new Orion.Client({
 var cities = [];
 
 if (process.argv.length === 2) {
-  cities = ['madrid', 'oporto', 'guadalajara', 'aveiro', 'amsterdam'];
+  cities = ['madrid', 'oporto', 'guadalajara', 'aveiro', 'amsterdam', 'santander'];
 } else {
   process.argv.forEach(function (val, index) {
     if (index > 1) {
@@ -38,6 +38,9 @@ cities.forEach(function(city) {
       break;
     case 'amsterdam':
       updateContextAmsterdam();
+      break;
+    case 'santander':
+      updateContextSantander();
       break;
     default:
       console.log('Unknown City');
@@ -148,15 +151,13 @@ function updateContextAveiro() {
         url: 'http://fiware-aveiro.citibrain.com:1026/v1',
         entity: 'ParkingLot',
         pattern: 'Aveiro*',
-        type: 'orion',
-        geo: 'true'
+        type: 'orion'
       },
       StreetParking: {
         url: 'http://fiware-aveiro.citibrain.com:1026/v1',
         entity: 'StreetParking',
         pattern: 'Aveiro*',
-        type: 'orion',
-        geo: 'true'
+        type: 'orion'
       }
     }
   };
@@ -167,3 +168,32 @@ function updateContextAveiro() {
     console.log('Error while updating context: ', error);
   });
 }
+
+function updateContextSantander() {
+  var contextDataSantander = {
+    type: 'CityBrokerFHA',
+    id: 'rtcbsantander',
+    location: new Orion.Attribute('43.46156,-3.81006', 'geo:point'),
+    cityBrokers: {
+      ParkingLot: {
+        url: 'http://130.206.83.68:1026/v1',
+        entity: 'ParkingLot',
+        pattern: 'santander.*',
+        type: 'orion'
+      },
+      StreetParking: {
+        url: 'http://130.206.83.68:1026/v1',
+        entity: 'StreetParking',
+        pattern: 'santander.*',
+        type: 'orion'
+      }
+    }
+  };
+
+  OrionClient.updateContext(contextDataSantander).then(function() {
+    console.log('Context Properly updated (Santander)');
+  }, function(error) {
+    console.log('Error while updating context: ', error);
+  });
+}
+

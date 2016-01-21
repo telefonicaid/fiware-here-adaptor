@@ -7,7 +7,7 @@
     "radius": {
       "type": "string",
       "minLength": 1,
-      "required": true
+      "required": false
     },
     "coords": {
       "type": "string",
@@ -22,7 +22,7 @@
     "geometry": {
       "type": "string",
       "enum": [
-        "Circle"
+        "Circle", "Polygon"
       ],
       "required": true
     }

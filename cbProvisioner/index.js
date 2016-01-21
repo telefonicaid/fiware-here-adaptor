@@ -48,20 +48,6 @@ cities.forEach(function(city) {
 
 });
 
-function updateContextMadrid() {
-  var contextDataMad = {
-    type: 'CityBrokerFHA',
-    id: 'rtcbmadrid',
-    location: new Orion.Attribute('40.42028,-3.70578', 'geo:point'),
-    cityContextBroker: 'http://130.206.83.68:1026/v1'
-  };
-
-  OrionClient.updateContext(contextDataMad).then(function() {
-    console.log('Context Properly updated (Madrid)');
-  }, function(error) {
-    console.log('Error while updating context: ', error);
-  });
-}
 
 //------------------------------------------------------
 function updateContextGuadalajara() {
@@ -103,12 +89,17 @@ function updateContextOporto() {
     id: 'rtcboporto',
     location: new Orion.Attribute('41.14946,-8.61031', 'geo:point'),
     cityBrokers: {
+      AmbientArea: {
+        url: 'http://130.206.83.68:1026/v1',
+        entity: 'AmbientArea',
+        type: 'orion'
+      },
       TrafficEvent: {
         url: 'http://fiware-porto.citibrain.com:1026/v1',
         entity: 'TrafficEvent',
         type: 'orion'
       },
-      EnvironmentEvent: {
+      AmbientObserved: {
         url: 'http://fiware-porto.citibrain.com:1026/v1',
         entity: 'EnvironmentEvent',
         type: 'orion'
@@ -121,7 +112,7 @@ function updateContextOporto() {
       },
       StreetParking: {
         url: 'http://fiware-porto.citibrain.com:1026/v1',
-        entity: 'StreeParking',
+        entity: 'StreetParking',
         type: 'orion'
       },
       CityEvent: {
@@ -197,3 +188,24 @@ function updateContextSantander() {
   });
 }
 
+function updateContextMadrid() {
+  var contextDataMadrid = {
+    type: 'CityBrokerFHA',
+    id: 'rtcbmadrid',
+    location: new Orion.Attribute('40.42028,-3.70578', 'geo:point'),
+    cityBrokers: {
+      AmbientObserved: {
+        url: 'http://130.206.83.68:1029/v1',
+        entity: 'AmbientObserved',
+        pattern: 'Madrid.*',
+        type: 'orion'
+      }
+    }
+  };
+
+  OrionClient.updateContext(contextDataMadrid).then(function() {
+    console.log('Context Properly updated (Madrid)');
+  }, function(error) {
+    console.log('Error while updating context: ', error);
+  });
+}

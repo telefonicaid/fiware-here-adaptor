@@ -119,6 +119,15 @@ function updateContextOporto() {
         url: 'https://api.ost.pt/ngsi10/contextEntityTypes/events',
         type: 'ngsi10',
         key: 'hackacityporto2015_server'
+      },
+      WeatherForecast: {
+        url:    'http://130.206.83.68:1028/v2/entities',
+        q: {
+          country: 'PT',
+          addressLocality: 'Porto'
+        },
+        entity: 'WeatherForecast',
+        type:   'ngsiv2'
       }
     }
   };

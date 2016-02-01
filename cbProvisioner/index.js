@@ -175,17 +175,19 @@ function updateContextSantander() {
     id: 'rtcbsantander',
     location: new Orion.Attribute('43.46156,-3.81006', 'geo:point'),
     cityBrokers: {
-      ParkingLot: {
-        url: 'http://130.206.83.68:1026/v1',
-        entity: 'ParkingLot',
-        pattern: 'santander.*',
-        type: 'orion'
-      },
       StreetParking: {
         url: 'http://130.206.83.68:1026/v1',
         entity: 'StreetParking',
         pattern: 'santander.*',
         type: 'orion'
+      },
+      ParkingLot: {
+        url:     'http://mu.tlmat.unican.es:8099/v1',
+        pattern: 'urn:x-iot:smartsantander:parking:indoor.*',
+        type:    'orion',
+        entity:  'ParkingLot',
+        service: 'smartsantander',
+        servicePath: '/parking/#'
       }
     }
   };

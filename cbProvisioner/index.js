@@ -11,7 +11,7 @@ var OrionClient = new Orion.Client({
 var cities = [];
 
 if (process.argv.length === 2) {
-  cities = ['madrid', 'oporto', 'guadalajara', 'aveiro', 'amsterdam', 'santander'];
+  cities = ['madrid', 'oporto', 'guadalajara', 'aveiro', 'amsterdam', 'santander', 'sevilla'];
 } else {
   process.argv.forEach(function (val, index) {
     if (index > 1) {
@@ -41,6 +41,9 @@ cities.forEach(function(city) {
       break;
     case 'santander':
       updateContextSantander();
+      break;
+    case 'sevilla':
+      updateContextSevilla();
       break;
     default:
       console.log('Unknown City');
@@ -188,6 +191,28 @@ function updateContextSantander() {
         entity:  'ParkingLot',
         service: 'smartsantander',
         servicePath: '/parking/#'
+      },
+      AmbientObserved: {
+        url:     'http://mu.tlmat.unican.es:8099/v1',
+        type:    'orion',
+        entity:  'AmbientObserved',
+        pattern: 'urn:x-iot:smartsantander:environmental:mobile.*',
+        service: 'smartsantander'
+      },
+      AmbientArea: {
+        url: 'http://mu.tlmat.unican.es:8099/v1',
+        entity: 'AmbientArea',
+        type: 'orion',
+        service: 'smartsantander'
+      },
+      WeatherForecast: {
+        url:    'http://130.206.83.68:1028/v2/entities',
+        q: {
+          postalCode: '39001',
+          country: 'ES'
+        },
+        entity: 'WeatherForecast',
+        type:   'ngsiv2'
       }
     }
   };
@@ -198,6 +223,38 @@ function updateContextSantander() {
     console.log('Error while updating context: ', error);
   });
 }
+
+
+function updateContextSevilla() {
+  var contextData = {
+    type: 'CityBrokerFHA',
+    id: 'rtcbsevilla',
+    location: new Orion.Attribute('37.3879, -6.00198', 'geo:point'),
+    cityBrokers: {
+      ParkingLot: {
+        url:     'http://130.206.122.29:1026/v1',
+        type:    'orion',
+        entity:  'ParkingLotZone'
+      },
+      WeatherForecast: {
+        url:    'http://130.206.83.68:1028/v2/entities',
+        q: {
+          postalCode: '41001',
+          country: 'ES'
+        },
+        entity: 'WeatherForecast',
+        type:   'ngsiv2'
+      }
+    }
+  };
+
+  OrionClient.updateContext(contextData).then(function() {
+    console.log('Context Properly updated (Sevilla)');
+  }, function(error) {
+    console.log('Error while updating context: ', error);
+  });
+}
+
 
 function updateContextMadrid() {
   var contextDataMadrid = {
@@ -210,6 +267,15 @@ function updateContextMadrid() {
         entity: 'AmbientObserved',
         pattern: 'Madrid.*',
         type: 'orion'
+      },
+      WeatherForecast: {
+        url:    'http://130.206.83.68:1028/v2/entities',
+        q: {
+          postalCode: '28001',
+          country: 'ES'
+        },
+        entity: 'WeatherForecast',
+        type:   'ngsiv2'
       }
     }
   };

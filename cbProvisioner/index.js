@@ -131,6 +131,20 @@ function updateContextOporto() {
         },
         entity: 'WeatherForecast',
         type:   'ngsiv2'
+      },
+      GasStation: {
+        url: 'https://api.ost.pt/ngsi10/contextEntityTypes/pois',
+        poisCat: '417',
+        type: 'ngsi10',
+        key: 'hackacityporto2015_server',
+        payment: true
+      },
+      Garage: {
+        url: 'https://api.ost.pt/ngsi10/contextEntityTypes/pois',
+        poisCat: '9',
+        type: 'ngsi10',
+        key: 'hackacityporto2015_server',
+        payment: true
       }
     }
   };

@@ -1,0 +1,1044 @@
+{
+  "contextResponses" : [
+    {
+      "contextElement" : {
+        "type" : "StreetParking",
+        "isPattern" : "false",
+        "id" : "santander:daoiz_velarde_1_5",
+        "attributes" : [
+          {
+            "name" : "allowedVehicles",
+            "type" : "object",
+            "value" : [
+              "Car"
+            ]
+          },
+          {
+            "name" : "availableSpotNumber",
+            "type" : "number",
+            "value" : "5"
+          },
+          {
+            "name" : "centroid",
+            "type" : "coords",
+            "value" : "43.462923, -3.803335",
+            "metadatas" : [
+              {
+                "name" : "location",
+                "type" : "string",
+                "value" : "WGS84"
+              }
+            ]
+          },
+          {
+            "name" : "location",
+            "type" : "geo:polygon",
+            "value" : "43.462975627835796,-3.80356167695194,43.46301091092682,-3.803128198976552,43.462879859445884,-3.803097956327106,43.462829455030146,-3.803536474744068,43.462975627835796,-3.80356167695194"
+          },
+          {
+            "name" : "totalSpotNumber",
+            "type" : "number",
+            "value" : "6"
+          },
+          {
+            "name" : "updated",
+            "type" : "date",
+            "value" : "2016-02-12T09:12:00.084Z"
+          }
+        ]
+      },
+      "statusCode" : {
+        "code" : "200",
+        "reasonPhrase" : "OK"
+      }
+    },
+    {
+      "contextElement" : {
+        "type" : "StreetParking",
+        "isPattern" : "false",
+        "id" : "santander:daoiz_velarde_9",
+        "attributes" : [
+          {
+            "name" : "allowedVehicles",
+            "type" : "object",
+            "value" : [
+              "Car"
+            ]
+          },
+          {
+            "name" : "availableSpotNumber",
+            "type" : "number",
+            "value" : "3"
+          },
+          {
+            "name" : "centroid",
+            "type" : "coords",
+            "value" : "43.462982, -3.802707",
+            "metadatas" : [
+              {
+                "name" : "location",
+                "type" : "string",
+                "value" : "WGS84"
+              }
+            ]
+          },
+          {
+            "name" : "location",
+            "type" : "geo:polygon",
+            "value" : "43.46304115357626,-3.802845934248392,43.463061315342564,-3.80258383128653,43.46292522342006,-3.802563669520233,43.462900021212185,-3.802830812923669,43.46304115357626,-3.802845934248392"
+          },
+          {
+            "name" : "totalSpotNumber",
+            "type" : "number",
+            "value" : "4"
+          },
+          {
+            "name" : "updated",
+            "type" : "date",
+            "value" : "2016-02-11T20:06:04.916Z"
+          }
+        ]
+      },
+      "statusCode" : {
+        "code" : "200",
+        "reasonPhrase" : "OK"
+      }
+    },
+    {
+      "contextElement" : {
+        "type" : "StreetParking",
+        "isPattern" : "false",
+        "id" : "santander:daoiz_velarde_11",
+        "attributes" : [
+          {
+            "name" : "allowedVehicles",
+            "type" : "object",
+            "value" : [
+              "Car"
+            ]
+          },
+          {
+            "name" : "availableSpotNumber",
+            "type" : "number",
+            "value" : "2"
+          },
+          {
+            "name" : "centroid",
+            "type" : "coords",
+            "value" : "43.463021, -3.802273",
+            "metadatas" : [
+              {
+                "name" : "location",
+                "type" : "string",
+                "value" : "WGS84"
+              }
+            ]
+          },
+          {
+            "name" : "location",
+            "type" : "geo:polygon",
+            "value" : "43.46306881965456,-3.802459790566277,43.463126658430156,-3.802091725630656,43.462963658244384,-3.802102241771673,43.46292159368031,-3.802449274425259,43.46306881965456,-3.802459790566277"
+          },
+          {
+            "name" : "totalSpotNumber",
+            "type" : "number",
+            "value" : "6"
+          },
+          {
+            "name" : "updated",
+            "type" : "date",
+            "value" : "2016-02-11T17:06:04.694Z"
+          }
+        ]
+      },
+      "statusCode" : {
+        "code" : "200",
+        "reasonPhrase" : "OK"
+      }
+    },
+    {
+      "contextElement" : {
+        "type" : "StreetParking",
+        "isPattern" : "false",
+        "id" : "santander:daoiz_velarde_13",
+        "attributes" : [
+          {
+            "name" : "allowedVehicles",
+            "type" : "object",
+            "value" : [
+              "Car"
+            ]
+          },
+          {
+            "name" : "availableSpotNumber",
+            "type" : "number",
+            "value" : "1"
+          },
+          {
+            "name" : "centroid",
+            "type" : "coords",
+            "value" : "43.463063, -3.801911",
+            "metadatas" : [
+              {
+                "name" : "location",
+                "type" : "string",
+                "value" : "WGS84"
+              }
+            ]
+          },
+          {
+            "name" : "location",
+            "type" : "geo:polygon",
+            "value" : "43.46311088421863,-3.802081209489638,43.463131916500664,-3.801749951047579,43.46302149701998,-3.801723660695035,43.46298994859693,-3.802081209489638,43.46311088421863,-3.802081209489638"
+          },
+          {
+            "name" : "totalSpotNumber",
+            "type" : "number",
+            "value" : "6"
+          },
+          {
+            "name" : "updated",
+            "type" : "date",
+            "value" : "2016-02-12T06:26:00.254Z"
+          }
+        ]
+      },
+      "statusCode" : {
+        "code" : "200",
+        "reasonPhrase" : "OK"
+      }
+    },
+    {
+      "contextElement" : {
+        "type" : "StreetParking",
+        "isPattern" : "false",
+        "id" : "santander:daoiz_velarde_17_19",
+        "attributes" : [
+          {
+            "name" : "allowedVehicles",
+            "type" : "object",
+            "value" : [
+              "Car"
+            ]
+          },
+          {
+            "name" : "availableSpotNumber",
+            "type" : "number",
+            "value" : "5"
+          },
+          {
+            "name" : "centroid",
+            "type" : "coords",
+            "value" : "43.463141, -3.801043",
+            "metadatas" : [
+              {
+                "name" : "location",
+                "type" : "string",
+                "value" : "WGS84"
+              }
+            ]
+          },
+          {
+            "name" : "location",
+            "type" : "geo:polygon",
+            "value" : "43.463200271417286,-3.801218885926184,43.46322130369932,-3.800861337131581,43.46310036807761,-3.800861337131581,43.463042529302015,-3.801197853644148,43.463200271417286,-3.801218885926184"
+          },
+          {
+            "name" : "totalSpotNumber",
+            "type" : "number",
+            "value" : "5"
+          },
+          {
+            "name" : "updated",
+            "type" : "date",
+            "value" : "2016-02-12T07:56:00.828Z"
+          }
+        ]
+      },
+      "statusCode" : {
+        "code" : "200",
+        "reasonPhrase" : "OK"
+      }
+    },
+    {
+      "contextElement" : {
+        "type" : "StreetParking",
+        "isPattern" : "false",
+        "id" : "santander:daoiz_velarde_21_25",
+        "attributes" : [
+          {
+            "name" : "allowedVehicles",
+            "type" : "object",
+            "value" : [
+              "Car"
+            ]
+          },
+          {
+            "name" : "availableSpotNumber",
+            "type" : "number",
+            "value" : "2"
+          },
+          {
+            "name" : "centroid",
+            "type" : "coords",
+            "value" : "43.463211, -3.800362",
+            "metadatas" : [
+              {
+                "name" : "location",
+                "type" : "string",
+                "value" : "WGS84"
+              }
+            ]
+          },
+          {
+            "name" : "location",
+            "type" : "geo:polygon",
+            "value" : "43.46327914247492,-3.800624723958682,43.46331069089797,-3.800098916907796,43.46315294878271,-3.800077884625761,43.46310562614812,-3.800629982029191,43.46327914247492,-3.800624723958682"
+          },
+          {
+            "name" : "totalSpotNumber",
+            "type" : "number",
+            "value" : "8"
+          },
+          {
+            "name" : "updated",
+            "type" : "date",
+            "value" : "2016-02-12T06:44:01.020Z"
+          }
+        ]
+      },
+      "statusCode" : {
+        "code" : "200",
+        "reasonPhrase" : "OK"
+      }
+    },
+    {
+      "contextElement" : {
+        "type" : "StreetParking",
+        "isPattern" : "false",
+        "id" : "santander:daoiz_velarde_13_15",
+        "attributes" : [
+          {
+            "name" : "allowedVehicles",
+            "type" : "object",
+            "value" : [
+              "Car"
+            ]
+          },
+          {
+            "name" : "availableSpotNumber",
+            "type" : "number",
+            "value" : "0"
+          },
+          {
+            "name" : "centroid",
+            "type" : "coords",
+            "value" : "43.463094, -3.801566",
+            "metadatas" : [
+              {
+                "name" : "location",
+                "type" : "string",
+                "value" : "WGS84"
+              }
+            ]
+          },
+          {
+            "name" : "location",
+            "type" : "geo:polygon",
+            "value" : "43.463032013161,-3.801707886483509,43.4631476907122,-3.801739434906562,43.46315294878271,-3.801413434535013,43.463042529302015,-3.801397660323486,43.463032013161,-3.801707886483509"
+          },
+          {
+            "name" : "totalSpotNumber",
+            "type" : "number",
+            "value" : "3"
+          },
+          {
+            "name" : "updated",
+            "type" : "date",
+            "value" : "2016-02-12T06:10:01.130Z"
+          }
+        ]
+      },
+      "statusCode" : {
+        "code" : "200",
+        "reasonPhrase" : "OK"
+      }
+    },
+    {
+      "contextElement" : {
+        "type" : "StreetParking",
+        "isPattern" : "false",
+        "id" : "santander:daoiz_velarde_27_29",
+        "attributes" : [
+          {
+            "name" : "allowedVehicles",
+            "type" : "object",
+            "value" : [
+              "Car"
+            ]
+          },
+          {
+            "name" : "availableSpotNumber",
+            "type" : "number",
+            "value" : "2"
+          },
+          {
+            "name" : "centroid",
+            "type" : "coords",
+            "value" : "43.463273, -3.799914",
+            "metadatas" : [
+              {
+                "name" : "location",
+                "type" : "string",
+                "value" : "WGS84"
+              }
+            ]
+          },
+          {
+            "name" : "location",
+            "type" : "geo:polygon",
+            "value" : "43.463200271417286,-3.799736110042684,43.46317923913525,-3.800072626555251,43.46334223932102,-3.800098916907795,43.463368529673566,-3.79975188425421,43.463200271417286,-3.799736110042684"
+          },
+          {
+            "name" : "totalSpotNumber",
+            "type" : "number",
+            "value" : "5"
+          },
+          {
+            "name" : "updated",
+            "type" : "date",
+            "value" : "2016-02-12T08:42:01.406Z"
+          }
+        ]
+      },
+      "statusCode" : {
+        "code" : "200",
+        "reasonPhrase" : "OK"
+      }
+    },
+    {
+      "contextElement" : {
+        "type" : "StreetParking",
+        "isPattern" : "false",
+        "id" : "santander:eduardo_benot",
+        "attributes" : [
+          {
+            "name" : "allowedVehicles",
+            "type" : "object",
+            "value" : [
+              "Car"
+            ]
+          },
+          {
+            "name" : "availableSpotNumber",
+            "type" : "number",
+            "value" : "0"
+          },
+          {
+            "name" : "centroid",
+            "type" : "coords",
+            "value" : "43.462686, -3.800751",
+            "metadatas" : [
+              {
+                "name" : "location",
+                "type" : "string",
+                "value" : "WGS84"
+              }
+            ]
+          },
+          {
+            "name" : "location",
+            "type" : "geo:polygon",
+            "value" : "43.4628243193759,-3.800824530638019,43.46284535165793,-3.800698336945806,43.4625298674274,-3.80068256273428,43.46254038356842,-3.800803498355984,43.4628243193759,-3.800824530638019"
+          },
+          {
+            "name" : "totalSpotNumber",
+            "type" : "number",
+            "value" : "6"
+          },
+          {
+            "name" : "updated",
+            "type" : "date",
+            "value" : "2016-02-12T08:04:02.365Z"
+          }
+        ]
+      },
+      "statusCode" : {
+        "code" : "200",
+        "reasonPhrase" : "OK"
+      }
+    },
+    {
+      "contextElement" : {
+        "type" : "StreetParking",
+        "isPattern" : "false",
+        "id" : "santander:general_mola_21_23",
+        "attributes" : [
+          {
+            "name" : "allowedVehicles",
+            "type" : "object",
+            "value" : [
+              "Car"
+            ]
+          },
+          {
+            "name" : "availableSpotNumber",
+            "type" : "number",
+            "value" : "2"
+          },
+          {
+            "name" : "centroid",
+            "type" : "coords",
+            "value" : "43.462434, -3.800877",
+            "metadatas" : [
+              {
+                "name" : "location",
+                "type" : "string",
+                "value" : "WGS84"
+              }
+            ]
+          },
+          {
+            "name" : "location",
+            "type" : "geo:polygon",
+            "value" : "43.4624720286518,-3.801055885740409,43.462508835145364,-3.800708853086824,43.46239841566468,-3.800693078875297,43.46235635110061,-3.801045369599391,43.4624720286518,-3.801055885740409"
+          },
+          {
+            "name" : "totalSpotNumber",
+            "type" : "number",
+            "value" : "6"
+          },
+          {
+            "name" : "updated",
+            "type" : "date",
+            "value" : "2016-02-12T05:34:06.797Z"
+          }
+        ]
+      },
+      "statusCode" : {
+        "code" : "200",
+        "reasonPhrase" : "OK"
+      }
+    },
+    {
+      "contextElement" : {
+        "type" : "StreetParking",
+        "isPattern" : "false",
+        "id" : "santander:general_mola_24_25",
+        "attributes" : [
+          {
+            "name" : "allowedVehicles",
+            "type" : "object",
+            "value" : [
+              "Car"
+            ]
+          },
+          {
+            "name" : "availableSpotNumber",
+            "type" : "number",
+            "value" : "0"
+          },
+          {
+            "name" : "centroid",
+            "type" : "coords",
+            "value" : "43.462487, -3.800539",
+            "metadatas" : [
+              {
+                "name" : "location",
+                "type" : "string",
+                "value" : "WGS84"
+              }
+            ]
+          },
+          {
+            "name" : "location",
+            "type" : "geo:polygon",
+            "value" : "43.462414189876206,-3.800672046593262,43.46251935128638,-3.800703595016315,43.46256667392096,-3.800388110785783,43.46244048022875,-3.80040388499731,43.462414189876206,-3.800672046593262"
+          },
+          {
+            "name" : "totalSpotNumber",
+            "type" : "number",
+            "value" : "5"
+          },
+          {
+            "name" : "updated",
+            "type" : "date",
+            "value" : "2016-02-11T16:46:02.540Z"
+          }
+        ]
+      },
+      "statusCode" : {
+        "code" : "200",
+        "reasonPhrase" : "OK"
+      }
+    },
+    {
+      "contextElement" : {
+        "type" : "StreetParking",
+        "isPattern" : "false",
+        "id" : "santander:general_mola_25_26",
+        "attributes" : [
+          {
+            "name" : "allowedVehicles",
+            "type" : "object",
+            "value" : [
+              "Car"
+            ]
+          },
+          {
+            "name" : "availableSpotNumber",
+            "type" : "number",
+            "value" : "4"
+          },
+          {
+            "name" : "centroid",
+            "type" : "coords",
+            "value" : "43.462496, -3.800279",
+            "metadatas" : [
+              {
+                "name" : "location",
+                "type" : "string",
+                "value" : "WGS84"
+              }
+            ]
+          },
+          {
+            "name" : "location",
+            "type" : "geo:polygon",
+            "value" : "43.46256141585045,-3.800177787965429,43.46243522215824,-3.800167271824411,43.46244048022875,-3.800398626926801,43.462550899709434,-3.800382852715274,43.46256141585045,-3.800177787965429"
+          },
+          {
+            "name" : "totalSpotNumber",
+            "type" : "number",
+            "value" : "4"
+          },
+          {
+            "name" : "updated",
+            "type" : "date",
+            "value" : "2016-02-12T08:50:02.674Z"
+          }
+        ]
+      },
+      "statusCode" : {
+        "code" : "200",
+        "reasonPhrase" : "OK"
+      }
+    },
+    {
+      "contextElement" : {
+        "type" : "StreetParking",
+        "isPattern" : "false",
+        "id" : "santander:general_mola_27_29",
+        "attributes" : [
+          {
+            "name" : "allowedVehicles",
+            "type" : "object",
+            "value" : [
+              "Car"
+            ]
+          },
+          {
+            "name" : "availableSpotNumber",
+            "type" : "number",
+            "value" : "4"
+          },
+          {
+            "name" : "centroid",
+            "type" : "coords",
+            "value" : "43.462534, -3.79981",
+            "metadatas" : [
+              {
+                "name" : "location",
+                "type" : "string",
+                "value" : "WGS84"
+              }
+            ]
+          },
+          {
+            "name" : "location",
+            "type" : "geo:polygon",
+            "value" : "43.46257193199147,-3.80003056199118,43.462629770767066,-3.799604658279962,43.46249831900435,-3.799588884068435,43.46243522215824,-3.800009529709145,43.46257193199147,-3.80003056199118"
+          },
+          {
+            "name" : "totalSpotNumber",
+            "type" : "number",
+            "value" : "6"
+          },
+          {
+            "name" : "updated",
+            "type" : "date",
+            "value" : "2016-02-12T08:58:02.797Z"
+          }
+        ]
+      },
+      "statusCode" : {
+        "code" : "200",
+        "reasonPhrase" : "OK"
+      }
+    },
+    {
+      "contextElement" : {
+        "type" : "StreetParking",
+        "isPattern" : "false",
+        "id" : "santander:santa_lucia_18_24",
+        "attributes" : [
+          {
+            "name" : "allowedVehicles",
+            "type" : "object",
+            "value" : [
+              "Car"
+            ]
+          },
+          {
+            "name" : "availableSpotNumber",
+            "type" : "number",
+            "value" : "2"
+          },
+          {
+            "name" : "centroid",
+            "type" : "coords",
+            "value" : "43.464292, -3.800434",
+            "metadatas" : [
+              {
+                "name" : "location",
+                "type" : "string",
+                "value" : "WGS84"
+              }
+            ]
+          },
+          {
+            "name" : "location",
+            "type" : "geo:polygon",
+            "value" : "43.464364934035,-3.800703595016315,43.464417514740084,-3.800177787965429,43.4642492564838,-3.800140981471866,43.46414409507362,-3.800666788522753,43.464364934035,-3.800703595016315"
+          },
+          {
+            "name" : "totalSpotNumber",
+            "type" : "number",
+            "value" : "6"
+          },
+          {
+            "name" : "updated",
+            "type" : "date",
+            "value" : "2016-02-12T05:48:13.135Z"
+          }
+        ]
+      },
+      "statusCode" : {
+        "code" : "200",
+        "reasonPhrase" : "OK"
+      }
+    },
+    {
+      "contextElement" : {
+        "type" : "StreetParking",
+        "isPattern" : "false",
+        "id" : "santander:general_mola_31_35",
+        "attributes" : [
+          {
+            "name" : "allowedVehicles",
+            "type" : "object",
+            "value" : [
+              "Car"
+            ]
+          },
+          {
+            "name" : "availableSpotNumber",
+            "type" : "number",
+            "value" : "5"
+          },
+          {
+            "name" : "centroid",
+            "type" : "coords",
+            "value" : "43.462649, -3.798711",
+            "metadatas" : [
+              {
+                "name" : "location",
+                "type" : "string",
+                "value" : "WGS84"
+              }
+            ]
+          },
+          {
+            "name" : "location",
+            "type" : "geo:polygon",
+            "value" : "43.46272441603623,-3.798952657536862,43.46277173867081,-3.798500463473099,43.46261925462605,-3.798416334344958,43.46249831900435,-3.798926367184317,43.46272441603623,-3.798952657536862"
+          },
+          {
+            "name" : "totalSpotNumber",
+            "type" : "number",
+            "value" : "11"
+          },
+          {
+            "name" : "updated",
+            "type" : "date",
+            "value" : "2016-02-12T08:24:02.951Z"
+          }
+        ]
+      },
+      "statusCode" : {
+        "code" : "200",
+        "reasonPhrase" : "OK"
+      }
+    },
+    {
+      "contextElement" : {
+        "type" : "StreetParking",
+        "isPattern" : "false",
+        "id" : "santander:hernan_cortes_35",
+        "attributes" : [
+          {
+            "name" : "allowedVehicles",
+            "type" : "object",
+            "value" : [
+              "Car"
+            ]
+          },
+          {
+            "name" : "availableSpotNumber",
+            "type" : "number",
+            "value" : "0"
+          },
+          {
+            "name" : "centroid",
+            "type" : "coords",
+            "value" : "43.462903, -3.80054",
+            "metadatas" : [
+              {
+                "name" : "location",
+                "type" : "string",
+                "value" : "WGS84"
+              }
+            ]
+          },
+          {
+            "name" : "location",
+            "type" : "geo:polygon",
+            "value" : "43.4629097224,-3.800683108689684,43.46295078604583,-3.800415434553915,43.46288995101497,-3.800410871926601,43.46285801262378,-3.800658774677342,43.4629097224,-3.800683108689684"
+          },
+          {
+            "name" : "totalSpotNumber",
+            "type" : "number",
+            "value" : "4"
+          },
+          {
+            "name" : "updated",
+            "type" : "date",
+            "value" : "2016-02-12T06:20:01.401Z"
+          }
+        ]
+      },
+      "statusCode" : {
+        "code" : "200",
+        "reasonPhrase" : "OK"
+      }
+    },
+    {
+      "contextElement" : {
+        "type" : "StreetParking",
+        "isPattern" : "false",
+        "id" : "santander:hernan_cortes_37_39",
+        "attributes" : [
+          {
+            "name" : "allowedVehicles",
+            "type" : "object",
+            "value" : [
+              "Car"
+            ]
+          },
+          {
+            "name" : "availableSpotNumber",
+            "type" : "number",
+            "value" : "5"
+          },
+          {
+            "name" : "centroid",
+            "type" : "coords",
+            "value" : "43.462936, -3.800219",
+            "metadatas" : [
+              {
+                "name" : "location",
+                "type" : "string",
+                "value" : "WGS84"
+              }
+            ]
+          },
+          {
+            "name" : "location",
+            "type" : "geo:polygon",
+            "value" : "43.46294774429429,-3.800392621417344,43.462981203561256,-3.800058028747633,43.462923410281945,-3.800042819989919,43.46289147189074,-3.800386537914258,43.46294774429429,-3.800392621417344"
+          },
+          {
+            "name" : "totalSpotNumber",
+            "type" : "number",
+            "value" : "6"
+          },
+          {
+            "name" : "updated",
+            "type" : "date",
+            "value" : "2016-02-11T19:44:00.710Z"
+          }
+        ]
+      },
+      "statusCode" : {
+        "code" : "200",
+        "reasonPhrase" : "OK"
+      }
+    },
+    {
+      "contextElement" : {
+        "type" : "StreetParking",
+        "isPattern" : "false",
+        "id" : "santander:hernan_cortes_41",
+        "attributes" : [
+          {
+            "name" : "allowedVehicles",
+            "type" : "object",
+            "value" : [
+              "Car"
+            ]
+          },
+          {
+            "name" : "availableSpotNumber",
+            "type" : "number",
+            "value" : "2"
+          },
+          {
+            "name" : "centroid",
+            "type" : "coords",
+            "value" : "43.462968, -3.799874",
+            "metadatas" : [
+              {
+                "name" : "location",
+                "type" : "string",
+                "value" : "WGS84"
+              }
+            ]
+          },
+          {
+            "name" : "location",
+            "type" : "geo:polygon",
+            "value" : "43.462981203561256,-3.800027611232204,43.46301010020092,-3.799737123959864,43.46295534867314,-3.799720394326378,43.462926452033486,-3.800010881598719,43.462981203561256,-3.800027611232204"
+          },
+          {
+            "name" : "totalSpotNumber",
+            "type" : "number",
+            "value" : "4"
+          },
+          {
+            "name" : "updated",
+            "type" : "date",
+            "value" : "2016-02-11T22:02:01.654Z"
+          }
+        ]
+      },
+      "statusCode" : {
+        "code" : "200",
+        "reasonPhrase" : "OK"
+      }
+    },
+    {
+      "contextElement" : {
+        "type" : "StreetParking",
+        "isPattern" : "false",
+        "id" : "santander:lope_de_vega_5",
+        "attributes" : [
+          {
+            "name" : "allowedVehicles",
+            "type" : "object",
+            "value" : [
+              "Car"
+            ]
+          },
+          {
+            "name" : "availableSpotNumber",
+            "type" : "number",
+            "value" : "5"
+          },
+          {
+            "name" : "centroid",
+            "type" : "coords",
+            "value" : "43.462791, -3.799562",
+            "metadatas" : [
+              {
+                "name" : "location",
+                "type" : "string",
+                "value" : "WGS84"
+              }
+            ]
+          },
+          {
+            "name" : "location",
+            "type" : "geo:polygon",
+            "value" : "43.46289451364228,-3.799629141780093,43.46291580590309,-3.799533326606494,43.46267854928274,-3.799489221209123,43.46268463278583,-3.799601766016208,43.46289451364228,-3.799629141780093"
+          },
+          {
+            "name" : "totalSpotNumber",
+            "type" : "number",
+            "value" : "10"
+          },
+          {
+            "name" : "updated",
+            "type" : "date",
+            "value" : "2016-02-12T07:58:03.880Z"
+          }
+        ]
+      },
+      "statusCode" : {
+        "code" : "200",
+        "reasonPhrase" : "OK"
+      }
+    },
+    {
+      "contextElement" : {
+        "type" : "StreetParking",
+        "isPattern" : "false",
+        "id" : "santander:lope_de_vega_6",
+        "attributes" : [
+          {
+            "name" : "allowedVehicles",
+            "type" : "object",
+            "value" : [
+              "Car"
+            ]
+          },
+          {
+            "name" : "availableSpotNumber",
+            "type" : "number",
+            "value" : "2"
+          },
+          {
+            "name" : "centroid",
+            "type" : "coords",
+            "value" : "43.463184, -3.799631",
+            "metadatas" : [
+              {
+                "name" : "location",
+                "type" : "string",
+                "value" : "WGS84"
+              }
+            ]
+          },
+          {
+            "name" : "location",
+            "type" : "geo:polygon",
+            "value" : "43.46327321170937,-3.799696060314036,43.46327473258514,-3.799592640761579,43.463092227492574,-3.799566785873465,43.463092227492574,-3.799667163674379,43.46327321170937,-3.799696060314036"
+          },
+          {
+            "name" : "totalSpotNumber",
+            "type" : "number",
+            "value" : "6"
+          },
+          {
+            "name" : "updated",
+            "type" : "date",
+            "value" : "2016-02-11T15:44:04.453Z"
+          }
+        ]
+      },
+      "statusCode" : {
+        "code" : "200",
+        "reasonPhrase" : "OK"
+      }
+    }
+  ]
+}

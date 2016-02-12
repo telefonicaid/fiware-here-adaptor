@@ -11,7 +11,7 @@ var OrionClient = new Orion.Client({
 var cities = [];
 
 if (process.argv.length === 2) {
-  cities = ['madrid', 'oporto', 'guadalajara', 'aveiro', 'amsterdam', 'santander', 'sevilla'];
+  cities = ['madrid', 'oporto', 'guadalajara', 'aveiro', 'amsterdam', 'santander', 'sevilla', 'antwerp'];
 } else {
   process.argv.forEach(function (val, index) {
     if (index > 1) {
@@ -45,6 +45,9 @@ cities.forEach(function(city) {
     case 'sevilla':
       updateContextSevilla();
       break;
+    case 'antwerp':
+      updateContextAntwerp();
+      break;    
     default:
       console.log('Unknown City');
   }
@@ -79,6 +82,28 @@ function updateContextAmsterdam() {
 
   OrionClient.updateContext(contextDataAms).then(function() {
     console.log('Context Properly updated (Amsterdam)');
+  }, function(error) {
+    console.log('Error while updating context: ', error);
+  });
+}
+
+//------------------------------------------------------
+function updateContextAntwerp() {
+  var contextDataAmtwerp = {
+    type: 'CityBrokerFHA',
+    id: 'rtcbantwerp',
+    location: new Orion.Attribute('51.2221, 4.39768', 'geo:point'),
+    cityBrokers: {
+      StreetParking: {
+        url: 'http://asign-demo02.romcloud.be:1026/v1',
+        entity: 'StreetParking',
+        type: 'orion'
+      }
+    }
+  };
+
+  OrionClient.updateContext(contextDataAmtwerp).then(function() {
+    console.log('Context Properly updated (Antwerp)');
   }, function(error) {
     console.log('Error while updating context: ', error);
   });

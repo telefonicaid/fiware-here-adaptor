@@ -98,6 +98,11 @@ function updateContextAntwerp() {
         url: 'http://asign-demo02.romcloud.be:1026/v1',
         entity: 'StreetParking',
         type: 'orion'
+      },
+      ParkingRestriction: {
+        url: 'http://asign-demo02.romcloud.be:1026/v1',
+        entity: 'ParkingRestriction',
+        type: 'orion'
       }
     }
   };
